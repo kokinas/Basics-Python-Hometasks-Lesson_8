@@ -1,17 +1,17 @@
 class Date:
 	
-	 def __init__(self, date):
+	def __init__(self, date):
 	 	self.date = date
 
-	 @classmethod
-	 def convert_to_numb(cls, date):
+	@classmethod
+	def convert_to_numb(cls, date):
 	 	result = ''
 	 	for numb in date.split('-'):
 	 		result += numb
 	 	return int(result)
 
-	 @staticmethod
-	 def valid_date(date):
+	@staticmethod
+	def valid_date(date):
 	 	
 	 	if int(date.split('-')[1]) > 12 or int(date.split('-')[1]) < 0 :
 	 		print(f'month {date} is not valid')
